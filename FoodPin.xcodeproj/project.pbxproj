@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD239A4E20E2A44D00E83195 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */; };
 		CDB5BE4620E13B93000F9064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE4520E13B93000F9064 /* AppDelegate.swift */; };
-		CDB5BE4820E13B93000F9064 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE4720E13B93000F9064 /* ViewController.swift */; };
 		CDB5BE4B20E13B93000F9064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5BE4920E13B93000F9064 /* Main.storyboard */; };
 		CDB5BE4D20E13B93000F9064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB5BE4C20E13B93000F9064 /* Assets.xcassets */; };
 		CDB5BE5020E13B93000F9064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5BE4E20E13B93000F9064 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		CDB5BE4220E13B93000F9064 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB5BE4520E13B93000F9064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDB5BE4720E13B93000F9064 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDB5BE4A20E13B93000F9064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDB5BE4C20E13B93000F9064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB5BE4F20E13B93000F9064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				CDB5BE4520E13B93000F9064 /* AppDelegate.swift */,
-				CDB5BE4720E13B93000F9064 /* ViewController.swift */,
 				CDB5BE4920E13B93000F9064 /* Main.storyboard */,
 				CDB5BE4C20E13B93000F9064 /* Assets.xcassets */,
 				CDB5BE4E20E13B93000F9064 /* LaunchScreen.storyboard */,
 				CDB5BE5120E13B93000F9064 /* Info.plist */,
+				CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB5BE4820E13B93000F9064 /* ViewController.swift in Sources */,
+				CD239A4E20E2A44D00E83195 /* RestaurantTableViewController.swift in Sources */,
 				CDB5BE4620E13B93000F9064 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
