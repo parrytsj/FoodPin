@@ -89,7 +89,8 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
         present(optionMenu, animated: true, completion: nil)
         
         // Add call action
-        let callActionHandler = { (action: UIAlertAction!) -> Void in let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry, the call feature is not availible yet. Please retry later.", preferredStyle: .alert)
+        let callActionHandler = { (action: UIAlertAction!) -> Void in
+            let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry, the call feature is not availible yet. Please retry later.", preferredStyle: .alert)
             alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alertMessage, animated: true, completion: nil)
         }
@@ -97,6 +98,17 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
         let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .default, handler: callActionHandler)
         optionMenu.addAction(callAction)
         
+        // Check-in action
+        let checkInAction = UIAlertAction(title: "Check in", style: .default, handler: {
+            (action:UIAlertAction!) -> Void in
+            
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = .checkmark
+        })
+        optionMenu.addAction(checkInAction)
+        
+        // Deselected highlighted row
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 
     /*
