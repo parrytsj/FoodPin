@@ -36,6 +36,8 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
                            "fiveleaves", "cafelore", "confessional", "barrafina",
                            "donostia", "royaloak", "caskpubkitchen"]
     
+    var restaurantIsVisited = Array(repeating: false, count:21)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -74,6 +76,12 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
         cell.typeLabel.text = restaurantTypes[indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
         
+        if restaurantIsVisited[indexPath.row] {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
@@ -84,9 +92,6 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
         // Add actions to the menu
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         optionMenu.addAction(cancelAction)
-    
-        // Display the menu
-        present(optionMenu, animated: true, completion: nil)
         
         // Add call action
         let callActionHandler = { (action: UIAlertAction!) -> Void in
@@ -104,8 +109,12 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
             
             let cell = tableView.cellForRow(at: indexPath)
             cell?.accessoryType = .checkmark
+            self.restaurantIsVisited[indexPath.row] = true
         })
         optionMenu.addAction(checkInAction)
+    
+        // Display the menu
+        present(optionMenu, animated: true, completion: nil)
         
         // Deselected highlighted row
         tableView.deselectRow(at: indexPath, animated: false)
