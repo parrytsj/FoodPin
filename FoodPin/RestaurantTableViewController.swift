@@ -40,6 +40,7 @@ var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.cellLayoutMarginsFollowReadableWidth = true
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
