@@ -41,27 +41,39 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="A6J-Yc-w3Z">
-                                                    <rect key="frame" x="75" y="0.0" width="294" height="58.5"/>
+                                                    <rect key="frame" x="75" y="0.0" width="294" height="59"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-Ul-fhc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ieL-xJ-Ftd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-Ul-fhc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="47" height="21"/>
+                                                                    <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-tick" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-61-5Yg">
+                                                                    <rect key="frame" x="257" y="0.0" width="22" height="21"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbf-Cp-Nd5">
-                                                            <rect key="frame" x="0.0" y="21.5" width="59" height="18"/>
+                                                            <rect key="frame" x="0.0" y="22" width="59" height="18"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvk-cq-ukV">
-                                                            <rect key="frame" x="0.0" y="40.5" width="33.5" height="18"/>
+                                                            <rect key="frame" x="0.0" y="41" width="33.5" height="18"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ieL-xJ-Ftd" secondAttribute="trailing" constant="15" id="uUt-49-Sw0"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                         </stackView>
@@ -74,6 +86,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="heartImageView" destination="vOM-61-5Yg" id="QRU-Dq-Bkv"/>
                                     <outlet property="locationLabel" destination="mbf-Cp-Nd5" id="tMy-gX-keF"/>
                                     <outlet property="nameLabel" destination="jBM-Ul-fhc" id="M7D-7a-RyE"/>
                                     <outlet property="thumbnailImageView" destination="B6r-Oo-Tdc" id="ezR-mw-IWF"/>
@@ -89,7 +102,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PvR-Ka-mRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="151"/>
+            <point key="canvasLocation" x="111.2" y="150.67466266866569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart-tick" width="22" height="21"/>
+    </resources>
 </document>
