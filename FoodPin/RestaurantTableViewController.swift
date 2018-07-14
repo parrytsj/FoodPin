@@ -74,17 +74,24 @@ class RestaurantTableViewController: UITableViewController {
             
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
-            // Call completion handler to dismiss the action button
+            // Call completion handler to with true to indicate
             completionHandler(true)
         }
         
         let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
             let defaultText = "Just checking in at " + self.restaurantNames[indexPath.row]
-            let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+            
+            let activityController = UIActivityViewController
+            
+            if let imageToShare = UIImage(named: self.restaurantImages[indexPath.row])
+            {
+                activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+            } else {
+                activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+            }
             
             self.present(activityController, animated: true, completion: nil)
             completionHandler(true)
-            
         }
         
         let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
