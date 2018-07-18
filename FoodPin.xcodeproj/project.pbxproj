@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD1B76A320FF8FD600585090 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1B76A220FF8FD600585090 /* RestaurantDetailViewController.swift */; };
 		CD239A4E20E2A44D00E83195 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */; };
 		CD239A5020E3B7E000E83195 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD239A4F20E3B7E000E83195 /* RestaurantTableViewCell.swift */; };
 		CDB5BE4620E13B93000F9064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE4520E13B93000F9064 /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD1B76A220FF8FD600585090 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		CD239A4F20E3B7E000E83195 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		CDB5BE4220E13B93000F9064 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 				CDB5BE5120E13B93000F9064 /* Info.plist */,
 				CD239A4D20E2A44D00E83195 /* RestaurantTableViewController.swift */,
 				CD239A4F20E3B7E000E83195 /* RestaurantTableViewCell.swift */,
+				CD1B76A220FF8FD600585090 /* RestaurantDetailViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				CD239A4E20E2A44D00E83195 /* RestaurantTableViewController.swift in Sources */,
 				CD239A5020E3B7E000E83195 /* RestaurantTableViewCell.swift in Sources */,
+				CD1B76A320FF8FD600585090 /* RestaurantDetailViewController.swift in Sources */,
 				CDB5BE4620E13B93000F9064 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
