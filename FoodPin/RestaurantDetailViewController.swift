@@ -14,6 +14,7 @@ class RestaurantDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.largeTitleDisplayMode = .never
         restaurantImageView.image = UIImage(named: restaurantImageName)
     }
 
