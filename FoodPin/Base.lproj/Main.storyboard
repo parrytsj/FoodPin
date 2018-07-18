@@ -92,7 +92,7 @@
                                     <outlet property="nameLabel" destination="jBM-Ul-fhc" id="M7D-7a-RyE"/>
                                     <outlet property="thumbnailImageView" destination="B6r-Oo-Tdc" id="ezR-mw-IWF"/>
                                     <outlet property="typeLabel" destination="tvk-cq-ukV" id="GfH-zT-LHt"/>
-                                    <segue destination="mv9-nk-sD3" kind="show" id="1g4-Oh-POd"/>
+                                    <segue destination="mv9-nk-sD3" kind="show" identifier="showRestaurantDetail" id="1g4-Oh-POd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="450.39999999999998" y="150.67466266866569"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Detail View Controller-->
         <scene sceneID="4qq-ov-VXN">
             <objects>
-                <viewController id="mv9-nk-sD3" sceneMemberID="viewController">
+                <viewController id="mv9-nk-sD3" customClass="RestaurantDetailViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSo-b1-Bev">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mpx-6v-4GC"/>
                     </view>
+                    <connections>
+                        <outlet property="restaurantImageView" destination="t6T-2t-XN6" id="OSR-1l-EOy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFR-eK-oos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

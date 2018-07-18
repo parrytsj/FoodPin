@@ -197,6 +197,14 @@ class RestaurantTableViewController: UITableViewController {
 //        tableView.deselectRow(at: indexPath, animated: false)
 //    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRestaurantDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! RestaurantDetailViewController
+                destinationController.restaurantImageName = restaurantImages[indexPath.row]
+            }
+        }
+    }
 }
 
 
